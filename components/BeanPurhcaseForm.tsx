@@ -21,7 +21,7 @@ export default function BeanPurchaseForm(props: BeanPurchaseForm) {
     const priceRef = useRef(null);
     const massRef = useRef(null);
 
-    function submitHandler() {
+    function submitHandler(event) {
       event.preventDefault();
   
       const enteredBean = beanRef.current.value;
